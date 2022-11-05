@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  position: relative;
+  max-width: 21.875rem;
+  padding: 1.875rem 1.875rem 3.125rem 1.875rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: .625rem;
+  text-align: center;
+}
+
+main p:first-of-type,
+main p:first-of-type span {
+  margin-bottom: 1.25rem;
+  color: hsl(150, 100%, 66%);
+  font-size: .5rem;
+  letter-spacing: .1875rem;
+  text-transform: uppercase;
+}
+
+.advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.125rem;
+}
+
+hr {
+  position: relative;
+  margin-top: 1.5625rem;
+  color: hsl(217, 19%, 38%);
+}
+
+.hr-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3125rem;
+  position: absolute;
+  left: 50%;
+  padding: .5rem;
+  background-color: hsl(217, 19%, 24%);
+  transform: translate(-50%, -50%);
+}
+
+.circle-div {
+  width: .25rem;
+  height: .625rem;
+  background-color: hsl(193, 38%, 86%);
+  border-radius: .3125rem;
+}
+
+.dice-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  transition: box-shadow 100ms;
+  transform: translate(-50%, 70%);
+  cursor: pointer;
+}
+
+.dice-circle:hover {
+  box-shadow: 0rem 0rem .625rem .3125rem hsl(150, 100%, 66%);
+}
+
+img {
+  height: .9375rem;
+}
